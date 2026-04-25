@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Stock App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h2>📦 SmartStock</h2>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Products</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+
+      <header class="header">
+        <h1>Dashboard</h1>
+        <span class="user">Admin</span>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Products</h3>
+          <p id="total">0</p>
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <p>Active ✅</p>
+        </div>
+        <div class="card">
+          <h3>Cloud</h3>
+          <p>Azure ☁️</p>
+        </div>
+      </section>
+
+      <section class="form">
+        <input id="name" placeholder="Product name">
+        <input id="qty" type="number" placeholder="Quantity">
+        <button onclick="addProduct()">Add Product</button>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
